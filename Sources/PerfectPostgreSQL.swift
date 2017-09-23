@@ -212,8 +212,8 @@ public final class PGResult {
 			return nil
 		}
 		let sc = s.utf8
-        guard sc.count % 2 == 0, sc.count >= 2, "\(sc[sc.startIndex...sc.index(after: sc.startIndex)])" == "\\x" else {
-            return nil
+		guard sc.count % 2 == 0, sc.count >= 2, s[s.startIndex] == "\\", s[s.index(after: s.startIndex)] == "x" else {
+			return nil
 		}
 		var ret = [Int8]()
 		var index = sc.index(sc.startIndex, offsetBy: 2)

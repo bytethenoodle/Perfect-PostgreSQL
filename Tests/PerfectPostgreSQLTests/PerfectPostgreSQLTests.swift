@@ -19,9 +19,9 @@
 
 import Foundation
 import XCTest
-@testable import PostgreSQL
+@testable import PerfectPostgreSQL
 
-class PostgreSQLTests: XCTestCase {
+class PerfectPostgreSQLTests: XCTestCase {
     
     let postgresTestConnInfo = "host=localhost dbname=postgres"
     
@@ -151,8 +151,8 @@ class PostgreSQLTests: XCTestCase {
 	}
 }
 
-extension PostgreSQLTests {
-    static var allTests : [(String, (PostgreSQLTests) -> () throws -> ())] {
+extension PerfectPostgreSQLTests {
+    static var allTests : [(String, (PerfectPostgreSQLTests) -> () throws -> ())] {
         return [
             ("testConnect", testConnect),
             ("testExec", testExec),
