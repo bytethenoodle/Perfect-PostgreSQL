@@ -65,3 +65,4 @@ fastlane/screenshots
 Packages/
 PostgreSQL.xcodeproj/
 .DS_Store
+Package.resolved
