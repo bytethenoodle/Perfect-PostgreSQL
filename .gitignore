@@ -66,3 +66,4 @@ Packages/
 PostgreSQL.xcodeproj/
 .DS_Store
 Package.resolved
+*.xcodeproj
