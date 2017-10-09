@@ -37,7 +37,7 @@ let package = Package(
 let package = Package(
     name: "PerfectPostgreSQL",
     products: [
-        .library(name: "PerfectPostgreSQL", targets: ["PostgreSQL-Package"])
+        .library(name: "PerfectPostgreSQL", targets: ["PerfectPostgreSQL"])
     ],
     dependencies: [
         .package(url: "https://github.com/PerfectlySoft/Perfect-libpq-linux.git", .upToNextMajor(from: "2.0.1"))
